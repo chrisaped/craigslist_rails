@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Craig</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <h1><%= link_to "Craigslist, Jr.", root_path %></h1>
+    <%= yield %>
+  </div>
+</body>
+</html>
+
+
+
