@@ -8,7 +8,7 @@ class PostsController < ApplicationController
     @post = Post.new(params[:post])
     @post.category_id = session[:category_id]
     @post.save
-
+    redirect_to '/'
   end
 
   def show
